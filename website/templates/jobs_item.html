@@ -1,0 +1,19 @@
+<div>
+<div class="border-bottom row" style="margin-bottom:16px; padding-bottom:8px;">
+  <div class="col-9">
+   <h4 style ="color:rgb(120,120,120); margin-bottmo:4px;"> {{job['title']}}</h4>
+    <div >
+      <b>Location:{{job['location']}}</b>
+    </div>
+    {% if 'salary' in job %}
+      <div>
+        <b>Salary:{{job['salary']}}</b>
+      </div>
+    {% endif %}
+</div>
+<div class="col-3">
+  <a href="mailto:fasnety@gmail.com?subject=Application%20for%20{{job['title']}}&body=My%20name%3A(Your%20name)%0D%0AMy%20resume%20link%3A(Your%20resume)%0D%0AMy%20linkedln%3A(%20Your%20Linkedln)" hebutton type="button" class="btn btn-outline-primary">Apply</a>
+</div>
+
+
+</div>

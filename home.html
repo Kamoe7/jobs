@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FASHYNET</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      #fashionwp{
+        height:960px;
+        width:100%;
+        object-fit:cover;
+      }
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow p-3 mb-5 fixed-top bg-white ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="height:56px"></div>
+    <div  class="container">
+    <h1 class="text-center mt-3 mb-3">FASNETY</h1>
+    <h1 class="text-center mb-3 ">千卂丂卄丨ㄖ几</h1>
+    <img  class="img-fluid" id="fashionwp" src="https://susleen-bank-website-1.davidle9.repl.co/static/fashionwp.jpg" height='320'>
+    <p class="lead mt-3">
+      Quisque dignissim augue sit amet mauris vestibulum hendrerit. Maecenas vehicula feugiat nunc, ut pulvinar lectus dictum id. Vivamus convallis pretium mi. Phasellus interdum, tellus ut egestas volutpat, justo ex tincidunt arcu, vel varius nisi justo non neque. Nunc tellus nulla, venenatis mollis lorem sit amet, interdum gravida nunc. Donec dolor sem, interdum placerat lorem sit amet, porttitor interdum urna. Nulla id lorem ligula. Curabitur venenatis tristique porttitor. Vivamus nec volutpat nunc. Phasellus congue vulputate magna porttitor interdum. Nullam tristique, metus et tempus placerat, dui metus lacinia tellus, et aliquet erat orci et velit. In dapibus scelerisque dolor, iaculis dictum ipsum. Donec eu enim quis eros rutrum maximus
+    </p>
+    <h2 class="text-center mt-3 mb-3"> 
+      ABOUT
+    </h2>
+      <div class="row"   style="margin-bottom:16px;">
+        <div class="col-md-6">
+
+    <p  class="lead text-danger">Quisque venenatis convallis nisl non molestie. Pellentesque laoreet diam at velit vehicula viverra. Quisque mollis metus enim, posuere semper est tincidunt in. Fusce maximus nibh non mauris tempus, nec imperdiet ex lobortis. Proin lectus erat, finibus in sapien in, fermentum vulputate erat. Sed egestas, massa sed consequat cursus, turpis sapien finibus ipsum, a porttitor lectus purus eget sapien. Pellentesque ut nunc semper, tincidunt mauris vitae, ornare nulla. Sed ultricies quam quis arcu vestibulum, nec vestibulum magna consequat. In scelerisque ultricies enim, pretium semper augue consequat at. Cras suscipit ullamcorper rutrum. In rutrum dapibus malesuada. Cras eu erat enim. Nulla varius a nunc id bibendum. Mauris sed mauris eu mauris vulputate fringilla non ut eros.</p>
+          </div>
+    <div class="d-none d-md-block col-md-6">  
+      <img src ="/static/ultra.jpg"  style="height:320px;border-radius:4px;">
+    </div>
+    <div class="text-center" style="margin-bottom:16px;">
+      <h1>POST</h1>
+    </div>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobs_items.html' %}
+        {% endfor %}
+        
+      </div>
+      <div class="text-center" >
+ 
+        <a href ="mailto:fasnety@gmail.com?subject=Question%20about%20the%20Jobs%20opening&body=My%20name%3A(Your%20name)%0D%0A%0D%0AMy%20Questions%3A(Your%20questions%20here~)" button class="btn btn-primary mb-3">contact us:</a>
+        <p>COPYRIGHT-2023,@SAGAR</p>
+      </div>
+     
+    </div>
+    <div class="container">
+
+      <footer class="py-3 my-4">
+        
+        <ul class ="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a target="_blank" href ="https://github.com/Kamoe7" class="nav-link text-muted">Github</a></li>
+        <li class ="nav-item"><a target ="_blank" href ="https://aniwatch.to/watch/the-eminence-in-shadow-season-2-18505?ep=113023" class="nav-link text-muted">Aniwatch</a></li>
+      <li class="nav-item"><a target="_blank" href ="https://www.instagram.com/susleen_sagar/" class="nav-link text-muted">Instagram</a></li>
+        </ul>
+        
+        <p class="text-center text-muted">© 2023 Sagar, Inc</p>
+
+      </footer>
+      </div>
+    
+  </body>
+</html>
